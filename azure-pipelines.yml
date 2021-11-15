@@ -95,5 +95,5 @@ stages:
     - task: PublishPipelineArtifact@1
       displayName: 'Publish JMeter Report'
       inputs:
-        targetPath: ./
+        targetPath: ./*
         artifact: jmeter             
