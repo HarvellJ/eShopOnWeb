@@ -52,7 +52,7 @@ stages:
     - publish: '$(Build.ArtifactStagingDirectory)'
       artifact: drop
 
-- stage: 'Test Environment'
+- stage: 'TestEnvironment'
   displayName: 'Deploy to the test environment'
   dependsOn: Build
   jobs:
