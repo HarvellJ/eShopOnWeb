@@ -74,3 +74,26 @@ stages:
               azureSubscription: 'azure-connection-eshop'
               appName: '$(testEnvAppName)'
               package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
+
+- stage: 'Performance'
+  displayName: 'Run performance tests against test environment'
+  dependsOn: TestEnvironment
+  jobs:
+  - job: RunLoadTests
+    displayName: 'Run load tests'
+    pool:
+      vmImage: 'ubuntu-20.04'
+    variables:
+    - group: Release
+    steps:
+    - script: |
+        wget -c ftp.ps.pl/pub/apache/jmeter/binaries/apache-jmeter-$(jmeterVersion).tgz
+        tar -xzf apache-jmeter-$(jmeterVersion).tgz
+      displayName: 'Install Apache JMeter'
+    - script: apache-jmeter-$(jmeterVersion)/bin/./jmeter -n -t eShop-performance.jmx -o Results.xml -Jhostname=$(testHostName)
+      displayName: 'Run Load tests'
+    - task: PublishPipelineArtifact@1
+        displayName: Publish JMeter Report
+        inputs:
+          targetPath: jmeter/report
+          artifact: jmeter             

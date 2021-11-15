@@ -15,7 +15,7 @@
         <collectionProp name="Arguments.arguments">
           <elementProp name="host" elementType="Argument">
             <stringProp name="Argument.name">host</stringProp>
-            <stringProp name="Argument.value">https://eshop-jmeter-ado.azurewebsites.net</stringProp>
+            <stringProp name="Argument.value">${__P(HostName,)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="scheme" elementType="Argument">
@@ -109,7 +109,7 @@
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">eshop-jmeter-ado.azurewebsites.net</stringProp>
+              <stringProp name="HTTPSampler.domain">${HostName}</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol"></stringProp>
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
@@ -170,7 +170,7 @@
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">eshop-jmeter-ado.azurewebsites.net</stringProp>
+              <stringProp name="HTTPSampler.domain">${HostName}</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol"></stringProp>
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
@@ -193,7 +193,7 @@
                   </elementProp>
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">${scheme}://eshop-jmeter-ado.azurewebsites.net/</stringProp>
+                    <stringProp name="Header.value">${scheme}://${HostName}/</stringProp>
                   </elementProp>
                   <elementProp name="Sec-Fetch-Site" elementType="Header">
                     <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
@@ -281,7 +281,7 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">eshop-jmeter-ado.azurewebsites.net</stringProp>
+              <stringProp name="HTTPSampler.domain">${HostName}</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol"></stringProp>
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
@@ -305,7 +305,7 @@
                   </elementProp>
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">${scheme}://eshop-jmeter-ado.azurewebsites.net/</stringProp>
+                    <stringProp name="Header.value">${scheme}://${HostName}/</stringProp>
                   </elementProp>
                   <elementProp name="Sec-Fetch-Site" elementType="Header">
                     <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
@@ -317,7 +317,7 @@
                   </elementProp>
                   <elementProp name="Origin" elementType="Header">
                     <stringProp name="Header.name">Origin</stringProp>
-                    <stringProp name="Header.value">${scheme}://eshop-jmeter-ado.azurewebsites.net</stringProp>
+                    <stringProp name="Header.value">${scheme}://${HostName}</stringProp>
                   </elementProp>
                   <elementProp name="Sec-Fetch-User" elementType="Header">
                     <stringProp name="Header.name">Sec-Fetch-User</stringProp>
@@ -355,7 +355,7 @@
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">eshop-jmeter-ado.azurewebsites.net</stringProp>
+              <stringProp name="HTTPSampler.domain">${HostName}</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol"></stringProp>
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
@@ -378,7 +378,7 @@
                   </elementProp>
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">${scheme}://eshop-jmeter-ado.azurewebsites.net/</stringProp>
+                    <stringProp name="Header.value">${scheme}://${HostName}/</stringProp>
                   </elementProp>
                   <elementProp name="Sec-Fetch-Site" elementType="Header">
                     <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
@@ -426,7 +426,7 @@
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">eshop-jmeter-ado.azurewebsites.net</stringProp>
+              <stringProp name="HTTPSampler.domain">${HostName}</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol"></stringProp>
               <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
@@ -491,7 +491,7 @@
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">eshop-jmeter-ado.azurewebsites.net</stringProp>
+              <stringProp name="HTTPSampler.domain">${HostName}</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol"></stringProp>
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
@@ -514,7 +514,7 @@
                   </elementProp>
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">${scheme}://eshop-jmeter-ado.azurewebsites.net/</stringProp>
+                    <stringProp name="Header.value">${scheme}://${HostName}/</stringProp>
                   </elementProp>
                   <elementProp name="Sec-Fetch-Site" elementType="Header">
                     <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
@@ -590,7 +590,7 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">eshop-jmeter-ado.azurewebsites.net</stringProp>
+              <stringProp name="HTTPSampler.domain">${HostName}</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol"></stringProp>
               <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
@@ -614,7 +614,7 @@
                   </elementProp>
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">${scheme}://eshop-jmeter-ado.azurewebsites.net/</stringProp>
+                    <stringProp name="Header.value">${scheme}://${HostName}/</stringProp>
                   </elementProp>
                   <elementProp name="Sec-Fetch-Site" elementType="Header">
                     <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
@@ -626,7 +626,7 @@
                   </elementProp>
                   <elementProp name="Origin" elementType="Header">
                     <stringProp name="Header.name">Origin</stringProp>
-                    <stringProp name="Header.value">${scheme}://eshop-jmeter-ado.azurewebsites.net</stringProp>
+                    <stringProp name="Header.value">${scheme}://${HostName}</stringProp>
                   </elementProp>
                   <elementProp name="Sec-Fetch-User" elementType="Header">
                     <stringProp name="Header.name">Sec-Fetch-User</stringProp>
@@ -664,7 +664,7 @@
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">eshop-jmeter-ado.azurewebsites.net</stringProp>
+              <stringProp name="HTTPSampler.domain">${HostName}</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol"></stringProp>
               <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
@@ -687,7 +687,7 @@
                   </elementProp>
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">${scheme}://eshop-jmeter-ado.azurewebsites.net/</stringProp>
+                    <stringProp name="Header.value">${scheme}://${HostName}/</stringProp>
                   </elementProp>
                   <elementProp name="Sec-Fetch-Site" elementType="Header">
                     <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
@@ -735,7 +735,7 @@
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">eshop-jmeter-ado.azurewebsites.net</stringProp>
+              <stringProp name="HTTPSampler.domain">${HostName}</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol"></stringProp>
               <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
@@ -800,7 +800,7 @@
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">eshop-jmeter-ado.azurewebsites.net</stringProp>
+              <stringProp name="HTTPSampler.domain">${HostName}</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol"></stringProp>
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
@@ -823,7 +823,7 @@
                   </elementProp>
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">${scheme}://eshop-jmeter-ado.azurewebsites.net/</stringProp>
+                    <stringProp name="Header.value">${scheme}://${HostName}/</stringProp>
                   </elementProp>
                   <elementProp name="Sec-Fetch-Site" elementType="Header">
                     <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
@@ -899,7 +899,7 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">eshop-jmeter-ado.azurewebsites.net</stringProp>
+              <stringProp name="HTTPSampler.domain">${HostName}</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol"></stringProp>
               <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
@@ -923,7 +923,7 @@
                   </elementProp>
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">${scheme}://eshop-jmeter-ado.azurewebsites.net/</stringProp>
+                    <stringProp name="Header.value">${scheme}://${HostName}/</stringProp>
                   </elementProp>
                   <elementProp name="Sec-Fetch-Site" elementType="Header">
                     <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
@@ -935,7 +935,7 @@
                   </elementProp>
                   <elementProp name="Origin" elementType="Header">
                     <stringProp name="Header.name">Origin</stringProp>
-                    <stringProp name="Header.value">${scheme}://eshop-jmeter-ado.azurewebsites.net</stringProp>
+                    <stringProp name="Header.value">${scheme}://${HostName}</stringProp>
                   </elementProp>
                   <elementProp name="Sec-Fetch-User" elementType="Header">
                     <stringProp name="Header.name">Sec-Fetch-User</stringProp>
@@ -973,7 +973,7 @@
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">eshop-jmeter-ado.azurewebsites.net</stringProp>
+              <stringProp name="HTTPSampler.domain">${HostName}</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol"></stringProp>
               <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
@@ -996,7 +996,7 @@
                   </elementProp>
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">${scheme}://eshop-jmeter-ado.azurewebsites.net/</stringProp>
+                    <stringProp name="Header.value">${scheme}://${HostName}/</stringProp>
                   </elementProp>
                   <elementProp name="Sec-Fetch-Site" elementType="Header">
                     <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
@@ -1044,7 +1044,7 @@
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">eshop-jmeter-ado.azurewebsites.net</stringProp>
+              <stringProp name="HTTPSampler.domain">${HostName}</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol"></stringProp>
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
@@ -1118,7 +1118,7 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">eshop-jmeter-ado.azurewebsites.net</stringProp>
+              <stringProp name="HTTPSampler.domain">${HostName}</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol"></stringProp>
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
@@ -1231,7 +1231,7 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">eshop-jmeter-ado.azurewebsites.net</stringProp>
+              <stringProp name="HTTPSampler.domain">${HostName}</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol"></stringProp>
               <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
@@ -1267,7 +1267,7 @@
                   </elementProp>
                   <elementProp name="Origin" elementType="Header">
                     <stringProp name="Header.name">Origin</stringProp>
-                    <stringProp name="Header.value">${scheme}://eshop-jmeter-ado.azurewebsites.net</stringProp>
+                    <stringProp name="Header.value">${scheme}://${HostName}</stringProp>
                   </elementProp>
                   <elementProp name="Sec-Fetch-User" elementType="Header">
                     <stringProp name="Header.name">Sec-Fetch-User</stringProp>
@@ -1305,7 +1305,7 @@
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">eshop-jmeter-ado.azurewebsites.net</stringProp>
+              <stringProp name="HTTPSampler.domain">${HostName}</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol"></stringProp>
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
@@ -1426,7 +1426,7 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">eshop-jmeter-ado.azurewebsites.net</stringProp>
+              <stringProp name="HTTPSampler.domain">${HostName}</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol"></stringProp>
               <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
@@ -1462,7 +1462,7 @@
                   </elementProp>
                   <elementProp name="Origin" elementType="Header">
                     <stringProp name="Header.name">Origin</stringProp>
-                    <stringProp name="Header.value">${scheme}://eshop-jmeter-ado.azurewebsites.net</stringProp>
+                    <stringProp name="Header.value">${scheme}://${HostName}</stringProp>
                   </elementProp>
                   <elementProp name="Sec-Fetch-User" elementType="Header">
                     <stringProp name="Header.name">Sec-Fetch-User</stringProp>
@@ -1500,7 +1500,7 @@
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">eshop-jmeter-ado.azurewebsites.net</stringProp>
+              <stringProp name="HTTPSampler.domain">${HostName}</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol"></stringProp>
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
@@ -1571,7 +1571,7 @@
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">eshop-jmeter-ado.azurewebsites.net</stringProp>
+              <stringProp name="HTTPSampler.domain">${HostName}</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol"></stringProp>
               <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
@@ -1636,7 +1636,7 @@
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">eshop-jmeter-ado.azurewebsites.net</stringProp>
+              <stringProp name="HTTPSampler.domain">${HostName}</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol"></stringProp>
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
@@ -1659,7 +1659,7 @@
                   </elementProp>
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">${scheme}://eshop-jmeter-ado.azurewebsites.net/</stringProp>
+                    <stringProp name="Header.value">${scheme}://${HostName}/</stringProp>
                   </elementProp>
                   <elementProp name="Sec-Fetch-Site" elementType="Header">
                     <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
