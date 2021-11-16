@@ -90,10 +90,10 @@ stages:
         wget -c ftp.ps.pl/pub/apache/jmeter/binaries/apache-jmeter-$(jmeterVersion).tgz
         tar -xzf apache-jmeter-$(jmeterVersion).tgz
       displayName: 'Install Apache JMeter'
-    - script: apache-jmeter-$(jmeterVersion)/bin/./jmeter -n -t eShop-performance.jmx -o Results.xml -JHostName=$(testHostName)
+    - script: apache-jmeter-$(jmeterVersion)/bin/./jmeter -n -t eShop-performance.jmx -l results/results.jtl -e -o report -JHostName=$(testHostName) 
       displayName: 'Run Load tests'
     - task: PublishPipelineArtifact@1
       displayName: 'Publish JMeter Report'
       inputs:
-        targetPath: ./*
+        targetPath: results/results.jtl
         artifact: jmeter             
